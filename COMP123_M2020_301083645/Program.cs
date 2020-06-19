@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace COMP123_M2020_301083645
 {
@@ -6,7 +10,30 @@ namespace COMP123_M2020_301083645
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Person tom = new Person("Tom", 40);
+
+            tom.SaysHello();
+
+            string personString = tom.ToString();
+
+            Console.WriteLine(personString);
+
+            Console.WriteLine();
+
+            Person jackey = new Person("Jacky", 22);
+            jackey.SaysHello();
+            Console.WriteLine(jackey.ToString());
+            Console.WriteLine();
+
+
+            Student joss = new Student("Joss", 22, 123456);
+            joss.SaysHello();
+            joss.Studies();
+            Console.WriteLine(joss.ToString());
+
+            // wait for user to enter anything
+            Console.ReadLine();
+
         }
     }
 }
