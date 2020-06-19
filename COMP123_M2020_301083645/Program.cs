@@ -30,6 +30,13 @@ namespace COMP123_M2020_301083645
             joss.SaysHello();
             joss.Studies();
             Console.WriteLine(joss.ToString());
+            Console.WriteLine();
+
+
+            Student_Child Bess = new Student_Child("Bess", 33, 234678);
+            Bess.SaysHello();
+            Bess.Studies();
+            Console.WriteLine(Bess.ToString());
 
             // wait for user to enter anything
             Console.ReadLine();
